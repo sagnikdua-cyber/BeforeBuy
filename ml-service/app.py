@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-DEMO_PATH = 'data/demo/samsung_galaxy_s25_ultra_12gb_256gb.csv'
+DEMO_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'demo', 'samsung_galaxy_s25_ultra_12gb_256gb.csv')
 demo_data = []
 
 try:

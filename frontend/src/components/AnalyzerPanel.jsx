@@ -21,7 +21,7 @@ const AnalyzerPanel = ({ productKey, title, currentPrice, onClose }) => {
     const fetchAnalysis = async () => {
       try {
         setLoading(true);
-        const url = `http://localhost:5000/api/analyze?productKey=${encodeURIComponent(productKey)}${title ? `&title=${encodeURIComponent(title)}` : ''}`;
+        const url = `/api/analyze?productKey=${encodeURIComponent(productKey)}${title ? `&title=${encodeURIComponent(title)}` : ''}`;
         const response = await axios.get(url);
         setData(response.data);
         setError(null);

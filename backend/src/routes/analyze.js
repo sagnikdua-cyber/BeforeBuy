@@ -49,7 +49,8 @@ router.get('/', async (req, res) => {
 
     // 3. Call ML Service
     try {
-        const mlResponse = await axios.post('http://localhost:5001/api/predict', {
+        const ML_URL = process.env.ML_SERVICE_URL || 'http://localhost:5001';
+        const mlResponse = await axios.post(`${ML_URL}/api/predict`, {
             productId: productKey,
             useDemo: useDemo,
             observations: observations
