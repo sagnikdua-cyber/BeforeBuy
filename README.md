@@ -6,15 +6,6 @@
 
 ---
 
-## 🏆 Hackathon
-
-**Event:** SerpApi Hackathon 2026  
-**Track:** Commerce & Market Intelligence
-
-BeforeBuy was built specifically for this track. The core loop of the application — product search, multi-merchant price comparison, alternative discovery, and live price tracking — is entirely driven by **SerpApi Google Shopping**. Every live price the user sees originates from a real SerpApi response. The platform then layers deterministic similarity scoring, a Python ML forecast pipeline, and browser-native notifications on top of that live data foundation.
-
----
-
 ## 💡 The Idea
 
 Most shopping tools answer one question:
